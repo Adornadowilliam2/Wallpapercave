@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           background-color: #191c22;
+           color: white;
+           font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .logo{
+            color: #788392;
+            display: flex;
+            align-items: center;
+            margin: 10px;
+          
+        }
+
+        .nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #222630;
+        }
+
+        .nav input{
+            margin: 15px;
+            background-color: #191c22;
+        }
+
+
+        .nav-links a{
+            text-decoration: none;
+            color: white;
+            margin: 10px;
+        }
+
+        .fullscreen{
+            height: 60vh;
+            background-image: linear-gradient(#02265e, #033845);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .fullscreen input{
+            height: 10%;
+            width: 50%;
+        }
+        .space img{
+            margin: 10px;
+        }
+        img:hover{
+            cursor: pointer;
+        }
+
+        .fa-brands{
+            margin: 10px;
+            font-size: 30px;
+        }
+        .line{
+            text-align: center;
+            text-decoration: underline;
+            text-decoration-color: yellow;
+            font-size: 20px;
+        }
+
+        .space-contain{
+            display: flex;
+            justify-content: center;
+        }
+
+        .space-contain button{
+            margin: 10px;
+            background-color: #3b4151;
+            color: white;
+            border: none;
+        }
+        .four{
+            display: flex;
+
+        }
+
+        .four img{
+            flex: 1;
+            margin: 10px;
+            width: 200px;
+        }
+
+        .three-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .card img{
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        .card{
+           display: flex;
+           align-items: center;
+           background-color: #222630;
+           margin: 10px;
+           padding: 10px;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            margin-left: 5px;
+            
+        }
+
+        .content h2{
+            margin: 0;
+        }
+        .content p{
+            margin: 0;
+        }
+        .create button{
+            background-color: #3a4152;
+            color: white;
+            border: none;
+            padding: 10px;
+        }
+
+        .mother-card{
+            display: flex;
+
+        }
+
+        .baby-card{
+            flex: 1;
+            width: 200px;
+      
+            margin: 10px;
+            text-align: center;
+            background-color: #222630;
+        }
+
+        .baby-card img{
+            border-radius: 50%;
+            width: 100px;
+            display: block;
+            margin: auto;
+            height: 100px;
+            padding-top: 10px;
+        }
+
+        .mother-card p{
+            color: #3a4152;
+        }
+
+        .three-grid p{
+            color: #3a4152;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <h1>Wallpaper Cave</h1>
+            <input type="text" placeholder="Search wallpapers.." title="please fill out this field">
+        </div>
+        <div class="nav-links">
+            <a href="">LATEST</a>
+            <a href="">CATEGORIES</a>
+            <a href="">UPLOAD</a>
+            <a href="">SIG IN</a>
+        </div>
+        <div class="create">
+            <button>Create Account</button>
+        </div>
+    </div>
+    <div class="fullscreen">
+        <h1>Welcome to WallpaperCave!</h1>
+        <input type="text" placeholder="Search Wallpapers..">
+        <div class="space">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+        </div>
+    </div>
+    <h1 class="line">TRENDING THIS WEEK</h1>
+    <div class="space-contain">
+        <button>Christmas</button>
+        <button>Naruto</button>
+        <button>Miles Morales</button>
+        <button>One Piece</button>
+        <button>4k</button>
+        <button>Cyberpunk</button>
+        <button>Goku</button>
+        <button>Demon Slayer</button>
+        <button>Black</button>
+        <button>Aesthethic</button>
+        <button>Autumn</button>
+    </div>
+    <br>
+    <h1 class="line">FEATURED DESKTOP WALLPAPERS</h1>
+    <div class="four">
+        <img src="1.webp" alt="">
+        <img src="2.webp" alt="">
+        <img src="3.jpg" alt="">
+        <img src="4.jpg" alt="">
+    </div>
+    <div class="four">
+        <img src="5.webp" alt="">
+        <img src="6.webp" alt="">
+        <img src="7.webp" alt="">
+        <img src="8.webp" alt="">
+    </div>
+    <h1 class="line">FEATURED ALBUMS</h1>
+
+    <div class="three-grid">
+        <div class="card">
+            <img src="10.webp" alt="">
+            <div class="content">
+                <h2>Merry Christmas & Happy New Year</h2>
+                <p>48 wallpapers</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="11.webp" alt="">
+            <div class="content">
+                <h2>Christmas Aesthethic</h2>
+                <p>125 wallpapers</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="13.webp" alt="">
+            <div class="content">
+                <h2>Preppy Xmas</h2>
+                <p>49 wallpapers</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="14.webp" alt="">
+            <div class="content">
+                <h2>Honkai Star Rail</h2>
+                <p>64 wallpapers</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="15.webp" alt="">
+            <div class="content">
+                <h2>Oshi No Ko HD</h2>
+                <p>64 wallpapers</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="16.webp" alt="">
+            <div class="content">
+                <h2>God of War Ragnarok</h2>
+                <p>22 wallpapers</p>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="line">FEATURED USERS</h1>
+    <div class="mother-card">
+        <div class="baby-card">
+            <img src="01.webp" alt="">
+            <h3>pr3ppymed1na</h3>
+            <p>40 wallpapers</p>
+        </div>
+        <div class="baby-card">
+            <img src="02.webp" alt="">
+            <h3>Northgx</h3>
+            <p>210 wallpapers</p>
+        </div>
+        <div class="baby-card">
+            <img src="1-1.webp" alt="">
+            <h3>graphixperience</h3>
+            <p>2,587 wallpapers</p>
+        </div>
+        <div class="baby-card">
+            <img src="1-2.webp" alt="">
+            <h3>blairthsadone</h3>
+            <p>1,820 wallpapers</p>
+        </div>
+        <div class="baby-card">
+            <img src="1-3.webp" alt="">
+            <h3>shawtysoaesthethic</h3>
+            <p>113 wallpapers</p>
+        </div>
+        <div class="baby-card">
+            <img src="1-4.webp" alt="">
+            <h3>grllilikeapearl</h3>
+            <p>868 wallpapers</p>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a63b501055.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+body{
+    background-color: #191c22;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .logo{
+     color: #788392;
+     display: flex;
+     align-items: center;
+     margin: 10px;
+   
+ }
+
+ .nav{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background-color: #222630;
+ }
+
+ .nav input{
+     margin: 15px;
+     background-color: #191c22;
+ }
+
+
+ .nav-links a{
+     text-decoration: none;
+     color: white;
+     margin: 10px;
+ }
+
+ .fullscreen{
+     height: 60vh;
+     background-image: linear-gradient(#02265e, #033845);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+ }
+
+ .fullscreen input{
+     height: 10%;
+     width: 50%;
+ }
+ .space img{
+     margin: 10px;
+ }
+ img:hover{
+     cursor: pointer;
+ }
+
+ .fa-brands{
+     margin: 10px;
+     font-size: 30px;
+ }
+ .line{
+     text-align: center;
+     text-decoration: underline;
+     text-decoration-color: yellow;
+     font-size: 20px;
+ }
+
+ .space-contain{
+     display: flex;
+     justify-content: center;
+ }
+
+ .space-contain button{
+     margin: 10px;
+     background-color: #3b4151;
+     color: white;
+     border: none;
+ }
+ .four{
+     display: flex;
+
+ }
+
+ .four img{
+     flex: 1;
+     margin: 10px;
+     width: 200px;
+ }
+
+ .three-grid{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+ }
+
+ .card img{
+     width: 100px;
+     border-radius: 50%;
+ }
+
+ .card{
+    display: flex;
+    align-items: center;
+    background-color: #222630;
+    margin: 10px;
+    padding: 10px;
+ }
+ .content{
+     display: flex;
+     flex-direction: column;
+     margin-left: 5px;
+     
+ }
+
+ .content h2{
+     margin: 0;
+ }
+ .content p{
+     margin: 0;
+ }
+ .create button{
+     background-color: #3a4152;
+     color: white;
+     border: none;
+     padding: 10px;
+ }
+
+ .mother-card{
+     display: flex;
+
+ }
+
+ .baby-card{
+     flex: 1;
+     width: 200px;
+
+     margin: 10px;
+     text-align: center;
+     background-color: #222630;
+ }
+
+ .baby-card img{
+     border-radius: 50%;
+     width: 100px;
+     display: block;
+     margin: auto;
+     height: 100px;
+     padding-top: 10px;
+ }
+
+ .mother-card p{
+     color: #3a4152;
+ }
+
+ .three-grid p{
+     color: #3a4152;
+ }
+
+ 
+ /* Media Queries */
+ @media only screen and (max-width: 600px) {
+     .four img {
+         width: 100%;
+     }
+ }
+
+ @media only screen and (max-width: 480px) {
+     .three-grid {
+         grid-template-columns: 1fr;
+     }
+ }

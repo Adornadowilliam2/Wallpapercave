@@ -147,6 +147,15 @@ img:hover {
   color: #3a4152;
 }
 
+.menu img {
+  display: none;
+}
+
+.container {
+  display: none;
+  background-color: transparent;
+}
+
 @media screen and (max-width: 767px) {
   h1 {
     text-align: center;
@@ -182,7 +191,7 @@ img:hover {
   }
 
   .logo h1 {
-    font-size: 20px;
+    font-size: 15px;
   }
   .nav-links,
   .create {
@@ -202,5 +211,46 @@ img:hover {
 
   .fullscreen {
     padding: 20px;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu img {
+    display: block;
+    width: 40px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+  }
+
+  .container {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .container ul li {
+    list-style-type: none;
+    text-align: center;
+    display: block;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container a {
+    text-decoration: none;
+    color: black;
   }
 }

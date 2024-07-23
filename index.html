@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WallpaperCave WEBSITE</title>
+    <title>WallpaperCave</title>
     <link rel="shortcut icon" href="media/logo.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -11,6 +11,7 @@
     <div class="nav">
       <div class="logo">
         <h1>Wallpaper Cave</h1>
+
         <input
           type="text"
           placeholder="Search wallpapers.."
@@ -144,9 +145,35 @@
         <p>868 wallpapers</p>
       </div>
     </div>
-    <script
-      src="media/https://kit.fontawesome.com/a63b501055.js"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
+<script>
+  let create = document.querySelector(".create");
+  let div = document.createElement("div");
+  div.classList.add("menu");
+  create.after(div);
+  div.setAttribute("id", "menu");
+  let menu = document.getElementById("menu");
+
+  menu.innerHTML = `       <img src="media/menu.jpg" alt="menu" onclick="send()" />`;
+  let container = document.createElement("div");
+  value = 0;
+  function send() {
+    if (value == 0) {
+      value++;
+
+      container.innerHTML = `    <ul>
+      <li><a href="">Latest</a></li>
+      <li><a href="">Category</a></li>
+      <li><a href="">Upload</a></li>
+      <li><a href="">Sign in</a></li>
+    </ul>`;
+      menu.after(container);
+      container.classList.add("container");
+    } else {
+      container.removeAttribute("class", "container");
+      container.innerHTML = "";
+      value = 0;
+    }
+  }
+</script>

@@ -146,3 +146,61 @@ img:hover {
 .three-grid p {
   color: #3a4152;
 }
+
+@media screen and (max-width: 767px) {
+  h1 {
+    text-align: center;
+  }
+
+  .four {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .four img {
+    width: 100px;
+  }
+
+  .space-contain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .three-grid {
+    display: block;
+    margin: auto;
+  }
+
+  .card {
+    display: block;
+    margin: auto;
+    margin: 10px;
+  }
+
+  .logo h1 {
+    font-size: 20px;
+  }
+  .nav-links,
+  .create {
+    display: none;
+  }
+
+  .mother-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .fullscreen input {
+    width: 100%;
+  }
+
+  .fullscreen {
+    padding: 20px;
+  }
+}

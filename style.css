@@ -27,6 +27,7 @@ body {
   text-decoration: none;
   color: white;
   margin: 10px;
+  text-transform: uppercase;
 }
 
 .fullscreen {
@@ -39,8 +40,8 @@ body {
 }
 
 .fullscreen input {
-  height: 10%;
-  width: 50%;
+  padding: 10px;
+  width: 600px;
 }
 .space img {
   margin: 10px;

@@ -1,3 +1,9 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #191c22;
   color: white;
@@ -16,6 +22,7 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: #222630;
+  padding: 10px;
 }
 
 .nav input {
@@ -50,33 +57,30 @@ img:hover {
   cursor: pointer;
 }
 
-.fa-brands {
+.trendings, .features {
   margin: 10px;
-  font-size: 30px;
-}
-.line {
   text-align: center;
   text-decoration: underline;
   text-decoration-color: yellow;
   font-size: 20px;
 }
 
-.space-contain {
+.topics {
   display: flex;
   justify-content: center;
 }
 
-.space-contain button {
+.topics button {
   margin: 10px;
   background-color: #3b4151;
   color: white;
   border: none;
 }
-.four {
+.features-wallpapers {
   display: flex;
 }
 
-.four img {
+.features-wallpapers img {
   flex: 1;
   margin: 10px;
   width: 200px;
@@ -118,20 +122,19 @@ img:hover {
   padding: 10px;
 }
 
-.mother-card {
+.card-container {
   display: flex;
 }
 
-.baby-card {
+.card-users {
   flex: 1;
   width: 200px;
-
   margin: 10px;
   text-align: center;
   background-color: #222630;
 }
 
-.baby-card img {
+.card-users img {
   border-radius: 50%;
   width: 100px;
   display: block;
@@ -140,7 +143,7 @@ img:hover {
   padding-top: 10px;
 }
 
-.mother-card p {
+.card-container p {
   color: #3a4152;
 }
 
@@ -158,22 +161,20 @@ img:hover {
 }
 
 @media screen and (max-width: 767px) {
-  h1 {
-    text-align: center;
-  }
 
-  .four {
+
+  .features-wallpapers {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
   }
 
-  .four img {
+  .features-wallpapers img {
     width: 100px;
   }
 
-  .space-contain {
+  .topics {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -194,12 +195,13 @@ img:hover {
   .logo h1 {
     font-size: 15px;
   }
+
   .nav-links,
   .create {
     display: none;
   }
 
-  .mother-card {
+  .card-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -214,19 +216,8 @@ img:hover {
     padding: 20px;
   }
 
-  .menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
-  .menu img {
-    display: block;
-    width: 40px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px gray;
-  }
+
 
   .container {
     background-color: white;
